@@ -13,6 +13,14 @@ License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 The raw file is kept unedited in `data/raw/`.
 
+### Dataset notes (from the UCI page)
+
+- **What one row is:** a hospital admission (an inpatient encounter) for a patient diagnosed with diabetes.
+- **Who is in it:** only encounters that met all five criteria: (1) an inpatient admission, (2) a diabetes diagnosis entered during the encounter, (3) a stay of 1 to 14 days, (4) lab tests performed, and (5) medications given. The results describe this group, not all hospital patients.
+- **Time and place:** 10 years of care (1999 to 2008) at 130 US hospitals and integrated delivery networks.
+- **Sensitive information:** the data includes age, gender, and race. Don't try to identify anyone, and mention this in your write-up.
+- **Splits:** the UCI page gives no recommended split. Use a standard train/test split, or train/validation/test if you build a model.
+
 ## Business questions
 
 1. [To be written in Phase 1]
