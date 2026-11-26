@@ -23,7 +23,13 @@ The raw file is kept unedited in `data/raw/`.
 
 ## Business questions
 
-1. [To be written in Phase 1]
+1. What is the 30-day readmission rate, and how does it vary by age group and admission type?
+
+2. Do patients who had a diabetes medicine dose changed during their stay have a different readmission rate from those whose medicines stayed the same?
+
+3. How long do patients stay, and how many labs and medicines do they receive, by admission type and discharge destination?
+
+4. Are patients getting their A1C tested, and does testing vary by age group or admission type?
 
 ## Project structure
 
