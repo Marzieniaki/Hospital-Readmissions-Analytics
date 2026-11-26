@@ -62,3 +62,4 @@ A `?` value means the information is missing or unknown.
 ## Notes
 - Verify the meanings of codes like `MC` and `HM` (column 11) on the UCI dataset page before you use them in your write-up.
 - Columns 25 to 47 describe medicines. Many of them are `No` for almost every row. Check how many rows each one has before you use it.
+- Medicine columns (25 to 47), as the UCI page defines them: the value says whether the drug was prescribed, or whether its dose changed during the encounter. `Up` = dose increased, `Down` = dose decreased, `Steady` = dose unchanged, `No` = not prescribed. These columns have no missing values (`?`).
