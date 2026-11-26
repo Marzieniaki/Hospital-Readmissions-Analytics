@@ -24,12 +24,12 @@ The raw file is kept unedited in `data/raw/`.
 ## Business questions
 
 1. What is the 30-day readmission rate, and how does it vary by age group and admission type?
-
-2. Do patients who had a diabetes medicine dose changed during their stay have a different readmission rate from those whose medicines stayed the same?
-
+   - 30-day readmission means `readmitted = '<30'`. The denominator is all visits, so the rate is the share of all visits followed by a readmission within 30 days.
+2. Do patients who had a diabetes medicine change during their stay have a different readmission rate from those whose medicines stayed the same?
+   - "Medicine change" means the `change` column is `Ch`. This column covers a change in the dose or in the medicine itself.
 3. How long do patients stay, and how many labs and medicines do they receive, by admission type and discharge destination?
-
 4. Are patients getting their A1C tested, and does testing vary by age group or admission type?
+   - "Tested" means `A1Cresult` is not `None`.
 
 ## Project structure
 
