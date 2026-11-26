@@ -8,7 +8,8 @@ SQL star schema and dashboard for 30-day hospital readmissions.
 
 Source: "Diabetes 130-US hospitals for years 1999–2008", UCI Machine Learning Repository.
 Link: https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008
-License: [to be filled in after reading the license on the UCI page]
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
 
 The raw file is kept unedited in `data/raw/`.
 
