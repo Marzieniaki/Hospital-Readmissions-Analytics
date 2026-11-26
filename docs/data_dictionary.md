@@ -26,12 +26,12 @@ A `?` value means the information is missing or unknown.
 | 16 | number_outpatient | Integer (count) | Number of outpatient visits in the year before this visit. | Counts |
 | 17 | number_emergency | Integer (count) | Number of emergency visits in the year before this visit. | Counts |
 | 18 | number_inpatient | Integer (count) | Number of hospital stays in the year before this visit. | Counts |
-| 19 | diag_1 | Categorical (diagnosis code) | Main diagnosis code (ICD-9). `?` means missing. | Codes such as 428 |
-| 20 | diag_2 | Categorical (diagnosis code) | Second diagnosis code (ICD-9). `?` means missing. | Codes such as 276 |
-| 21 | diag_3 | Categorical (diagnosis code) | Third diagnosis code (ICD-9). `?` means missing. | Codes such as 250 |
+| 19 | diag_1 | Categorical (diagnosis code) | Main diagnosis, coded as the first three digits of the ICD-9 code. `?` means missing. | Codes such as 428 |
+| 20 | diag_2 | Categorical (diagnosis code) | Second diagnosis, coded as the first three digits of the ICD-9 code. `?` means missing. | Codes such as 276 |
+| 21 | diag_3 | Categorical (diagnosis code) | Third diagnosis, coded as the first three digits of the ICD-9 code. `?` means missing. The UCI page says there are 954 distinct values, but the file has 790. Note this in your write-up. | Codes such as 250 |
 | 22 | number_diagnoses | Integer (count) | Number of diagnoses recorded for the visit. | 1 to 16 |
-| 23 | max_glu_serum | Categorical (ordered test result) | Highest glucose test result. `None` means no test was done. | None, Norm, >200, >300 |
-| 24 | A1Cresult | Categorical (ordered test result) | A1C result, which shows average blood sugar over the past few months. `None` means no test was done. | None, Norm, >7, >8 |
+| 23 | max_glu_serum | Categorical (ordered test result) | Highest glucose test result: `>200` or `>300`, `Norm` for normal, or `None` if the test wasn't done. | None, Norm, >200, >300 |
+| 24 | A1Cresult | Categorical (ordered test result) | A1C test result, which shows average blood sugar over the past few months: `>8` (above 8%), `>7` (above 7% but below 8%), `Norm` (below 7%), or `None` if the test wasn't done. | None, Norm, >7, >8 |
 | 25 | metformin | Categorical (ordered dose change) | Diabetes medicine. `No` = not prescribed, `Steady` = same dose, `Up` = dose increased, `Down` = dose decreased. | No, Steady, Up, Down |
 | 26 | repaglinide | Categorical (ordered dose change) | Diabetes medicine (same values as metformin). | No, Steady, Up, Down |
 | 27 | nateglinide | Categorical (ordered dose change) | Diabetes medicine (same values as metformin). | No, Steady, Up, Down |
