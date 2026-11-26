@@ -55,9 +55,9 @@ A `?` value means the information is missing or unknown.
 | 45 | glimepiride-pioglitazone | Categorical (ordered dose change) | Combination medicine. Almost always `No`. | No, Steady |
 | 46 | metformin-rosiglitazone | Categorical (ordered dose change) | Combination medicine. Almost always `No`. | No, Steady |
 | 47 | metformin-pioglitazone | Categorical (ordered dose change) | Combination medicine. Almost always `No`. | No, Steady |
-| 48 | change | Categorical (binary) | Whether any diabetes medicine dose was changed during the visit. | Ch (changed), No |
+| 48 | change | Categorical (binary) | Whether there was a change in diabetes medicines during the visit, either the dose or the medicine itself. `Ch` = change, `No` = no change. | Ch, No |
 | 49 | diabetesMed | Categorical (binary) | Whether any diabetes medicine was prescribed. | Yes, No |
-| 50 | readmitted | Categorical (target) | Whether the patient came back to the hospital. `NO` = not readmitted, `<30` = readmitted within 30 days, `>30` = readmitted after 30 days. | NO, <30, >30 |
+| 50 | readmitted | Categorical (target) | Whether the patient came back to the hospital. `NO` = no record of readmission, `<30` = readmitted within 30 days, `>30` = readmitted after 30 days. The UCI page writes this value as `No`, but the file uses `NO`. | NO, <30, >30 |
 
 ## Notes
 - Verify the meanings of codes like `MC` and `HM` (column 11) on the UCI dataset page before you use them in your write-up.
